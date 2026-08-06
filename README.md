@@ -1,8 +1,6 @@
 # ⚖️ 𝗝𝘂𝘀𝗜𝗔: 𝐴𝑛𝑎𝑙𝑖𝑧𝑎𝑑𝑜𝑟 𝐽𝑢𝑟𝜄́𝑑𝑖𝑐𝑜 (RAG Local y Reflexivo)
 
-Proyecto Final para el Demo Day — 2026
 Curso Python, Datos e Ingeniería de IA Aplicada — UTN Rosario
-Desarrollado por: Lucas Luján
 
 ════════════════════════════════════════════════════════════════
 
@@ -23,8 +21,7 @@ JusIA es un asistente digital enfocado en procesar y analizar sentencias, extray
    * **Capa 2 (Auditor)**: Un agente corrector evalúa el borrador frente a las evidencias originales mediante una rúbrica rigurosa de calidad, evitando alucinaciones de nombres, montos o fechas.
 4. **Heurísticas Judiciales**: El buscador filtra y restringe semánticamente la información según la foja del expediente (ej: las partes se extraen estrictamente de la Foja 1; la decisión final, de las últimas páginas), bloqueando colisiones de palabras clave.
 5. **Garantía de Grounding**: Cada dato de la ficha y cada línea de las evidencias incluye la referencia a su número de página real en el fallo original para verificación del abogado.
-6. **Filtro de Rigor de Materia**: El auditor bloquea terminología penal ("absuelto", "delito") si la causa es de índole administrativa, civil o laboral.
-7. **Interfaz Gradio Blocks**: Panel interactivo moderno (`Soft()`) que divide la pantalla en una columna de entrada de documentos y un visor derecho con tres pestañas: Resumen Ejecutivo, Ficha Técnica JSON y Evidencias de Respaldo.
+6 **Interfaz Gradio Blocks**: Panel interactivo moderno (`Soft()`) que divide la pantalla en una columna de entrada de documentos y un visor derecho con tres pestañas: Resumen Ejecutivo, Ficha Técnica JSON y Evidencias de Respaldo.
 
 ────────────────
 
@@ -126,7 +123,7 @@ El procesamiento de sentencias se ejecuta de forma estructurada en un flujo de 4
 * **`gradio`**: Para el desarrollo de la interfaz de usuario interactiva por pestañas.
 * **`ollama`**: Cliente de conexión local con el modelo LLM offline.
 * **`pypdf`**: Extractor robusto de texto plano página por página de los archivos PDF.
-* **`scikit-learn`**: Motor matemático local para vectorización léxica (**`TfidfVectorizer`**) y cálculo de cercanía (**`cosine_similarity`**).
+* **`scikit-learn`**: Motor matemático local para vectorización léxica (**TfidfVectorizer**) y cálculo de cercanía (**cosine_similarity**).
 * **`numpy`**: Procesamiento veloz de arrays y ordenamiento de scores de similitud.
 * **`python-dotenv`**: Carga segura de configuraciones del entorno local.
 

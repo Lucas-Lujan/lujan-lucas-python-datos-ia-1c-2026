@@ -1,0 +1,7 @@
+pypdf
+google-genai
+python-dotenv
+gradio
+numpy
+scikit-learn
+ollama
